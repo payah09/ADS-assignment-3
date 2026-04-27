@@ -49,7 +49,7 @@ This project is an experimental analysis system designed to implement, measure, 
     Merge Sort was significantly faster, especially as the array size increased. While Bubble Sort's time grew quadratically, Merge Sort's divide-and-conquer approach allowed it to handle 1,000 elements with ease.
 
 2.  **How does performance change with input size?**
-    For Bubble Sort, doubling the input size roughly quadruples the execution time ($O(n^2)$). For Merge Sort and Linear Search, the increase is much more manageable and linear in appearance at these scales.
+    For Bubble Sort, doubling the input size roughly quadruples the execution time ( $O(n^2)$ ). For Merge Sort and Linear Search, the increase is much more manageable and linear in appearance at these scales.
 
 3.  **How does sorted vs unsorted data affect performance?**
     Bubble Sort is faster on sorted data because fewer swaps occur, as it performs $O(n)$ comparisons in this implementation. Merge Sort remains consistent regardless of the data's initial order.
@@ -58,7 +58,7 @@ This project is an experimental analysis system designed to implement, measure, 
     Yes. The results clearly show the $O(n^2)$ curve of Bubble Sort versus the much flatter $O(n \log n)$ curve of Merge Sort.
 
 5.  **Which searching algorithm is more efficient? Why?**
-    In this experiment, Linear Search is $O(n)$. While efficient for small arrays, it would be much slower than Binary Search ($O(\log n)$) if the dataset were significantly larger (e.g., 1,000,000 elements).
+    In this experiment, Linear Search is $O(n)$. While efficient for small arrays, it would be much slower than Binary Search ( $O(\log n)$ ) if the dataset were significantly larger (e.g., 1,000,000 elements).
 
 6.  **Why does Binary Search require a sorted array?**
     Binary Search works by jumping to the middle and eliminating half the data. This logic only works if the data is ordered; otherwise, you cannot know which side the target is on.
@@ -67,6 +67,7 @@ This project is an experimental analysis system designed to implement, measure, 
 
 ## E. Screenshots
 ![Program Output](docs/screanshots/console_output.png)
+
 *Figure 1: Console output showing execution times for different array sizes.*
 
 ---
