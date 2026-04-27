@@ -30,11 +30,11 @@ public class Experiment {
             long advTime = measureSortTime(randomArr, "advanced");
             long searchTime = measureSearchTime(randomArr, target);
             if(size == 1000) {
-                System.out.printf("%d\tRandom\t\t%d\t\t%d\t\t%d\n", size, basicTime, advTime, searchTime);
+                System.out.printf("%d\tRandom\t\t%d\t\t%d\t\t\t%d\n", size, basicTime, advTime, searchTime);
                 Arrays.sort(randomArr);
                 basicTime = measureSortTime(randomArr, "basic");
                 advTime = measureSortTime(randomArr, "advanced");
-                System.out.printf("%d\tSorted\t\t%d\t\t%d\t\t---\n", size, basicTime, advTime);
+                System.out.printf("%d\tSorted\t\t%d\t\t%d\t\t\t---\n", size, basicTime, advTime);
                 continue;
             }
             System.out.printf("%d\t\tRandom\t\t%d\t\t%d\t\t\t%d\n", size, basicTime, advTime, searchTime);
