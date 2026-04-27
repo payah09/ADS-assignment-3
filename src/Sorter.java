@@ -24,7 +24,7 @@ public class Sorter {
 
     public void mergeSort(int[] arr, int left, int right) {
         if (left < right) {
-            int mid = left + (left + right) / 2;
+            int mid = left + (right - left) / 2;
             mergeSort(arr, left, mid);
             mergeSort(arr, mid + 1, right);
             merge(arr, left, mid, right);
@@ -54,7 +54,7 @@ public class Sorter {
     }
 
     public void printArray(int[] arr) {
-        for (int i: arr) System.out.print(arr[i] + " ");
+        for (int i: arr) System.out.print(i + " ");
         System.out.println();
     }
     public int[] generateRandomArray(int size) {
